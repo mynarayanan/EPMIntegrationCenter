@@ -1,0 +1,21 @@
+{
+  "name": "integration-centre",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Enterprise EPM, OLAP, and Cloud Data Integration Control Plane",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=apps/web run dev",
+    "build": "npm --workspace=apps/web run build",
+    "lint": "npm --workspace=apps/web run lint",
+    "typecheck": "npm --workspace=apps/web run typecheck",
+    "test:unit": "npm --workspace=apps/web run test:unit",
+    "test:e2e": "npm --workspace=apps/web run test:e2e"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
